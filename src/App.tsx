@@ -1,6 +1,10 @@
+import './styles/global.css';
+
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <div>
+      <button style={{ height: '3rem'}}>Teste</button>
+    </div>
   );
 }
 
