@@ -27,13 +27,7 @@ a {
   --red-milk: #EE8288;
 }
 
-.container{
-  max-width: 1392px;
-  height: 100vh;
 
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+
 
 

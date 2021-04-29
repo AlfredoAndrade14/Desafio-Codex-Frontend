@@ -1,9 +1,13 @@
-import Head from 'next/head'
+import { Form } from '../components/Form'
+import { ImgWrapper } from '../components/ImgWrapper'
+
+import styles from '../styles/components/Home.module.css'
 
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Hello World</h1>
+    <div className={styles.container}>
+        <ImgWrapper />
+        <Form />
     </div>
   )
 }
