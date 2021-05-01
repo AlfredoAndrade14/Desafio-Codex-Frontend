@@ -1,0 +1,100 @@
+.card{
+    max-width: 650px;
+    min-height: 50vh;
+    padding: 5rem;
+    box-shadow: 0px 4px 10px 4px rgba(161, 175, 196, 0.4);
+    border-radius: 8px;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--blue-gray);
+}
+
+.inputfield {
+    position: relative;
+}
+
+.inputfield:first-child {
+    margin-bottom: 2rem;
+}
+
+.inputfield .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.inputfield .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, var(--dark-blue), var(--blue));
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.inputfield input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.inputfield input {
+    outline: none;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    margin-top: 2rem;
+}
+
+.inputfield input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.7rem;
+    background-color: var(--blue-milk);
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.card form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background-color: var(--blue);
+}
+
+.card p{
+    text-align: center;
+    color: var(--blue-gray);
+    margin-top: 1.25rem;
+}
+.card form a{
+    color: var(--dark-blue)
+}

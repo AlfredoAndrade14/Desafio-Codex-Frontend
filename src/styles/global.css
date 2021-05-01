@@ -1,0 +1,29 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #267FFF;
+    --blue-milk: #4C94FA;
+    --dark-blue: #31507D;
+    --blue-gray: #A1AFC4;
+    --blue-gray-light: #F2F6FF;
+    --gray: #F0F2F5;
+    --red: #F06971;
+    --red-milk: #EE8288;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
